@@ -1,0 +1,51 @@
+class Config:
+    NUM_MD = 10
+    NUM_MS = 5
+    NUM_CONNECTED_MS = 3
+    AREA_SIZE = 500
+
+    TOTAL_TIMESLOTS = 50
+    SLOT_DURATION = 0.1
+    NUM_EPISODES = 500
+
+    DATA_SIZE_MIN = 300
+    DATA_SIZE_MAX = 800
+    COMP_DENSITY_MIN = 150
+    COMP_DENSITY_MAX = 250
+    DEADLINE_MIN = 0.7
+    DEADLINE_MAX = 1.3
+    TASK_IMPORTANCE_PROBS = [0.3, 0.5, 0.2]
+    D_MAX = 800
+
+    MD_CPU_MIN = 1.0
+    MD_CPU_MAX = 2.0
+    MS_CPU_MIN = 8.0
+    MS_CPU_MAX = 12.0
+    CLOUD_CPU = 50.0
+    MS_QUEUE_MAX = 100
+
+    BANDWIDTH = 20e6
+    NOISE_POWER = 1e-13
+    PATH_LOSS_EXP = 3
+    REF_DISTANCE = 1.0
+    REF_GAIN = 1e-2
+    MD_MAX_POWER = 0.5
+    MS_CLOUD_POWER = 2.0
+
+    W1 = 0.4
+    W2 = 0.3
+    W3 = 0.3
+
+    ETA = 0.7
+
+    ACTOR_LR = 3e-4
+    CRITIC_LR = 3e-4
+    GAMMA = 0.99
+    GAE_LAMBDA = 0.95
+    PPO_CLIP = 0.2
+    BATCH_SIZE = 128
+    HIDDEN_DIM = 128
+    NUM_HIDDEN_LAYERS = 3
+
+    REWARD_WEIGHT = 1.0
+    PENALTY = {1: 5.0, 2: 10.0, 3: 20.0}
